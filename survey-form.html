@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey-form.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="title">Survey Form</h1>
+
+      <p id="description">
+        Please take a few minutes to rate us so we can serve you better
+      </p>
+    </header>
+
+    <!-- Start of form -->
+    <form id="survey-form" action="">
+      <!-- Name -->
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label><br />
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+
+      <!-- Age -->
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age <span id="optional">(Optional)</span></label
+        ><br />
+        <input type="number" id="number" min="10" max="99" placeholder="Age" />
+      </div>
+
+      <!-- Role dropdown-->
+      <div class="form-group">
+        <label for="dropdown" id="role-label"
+          >Which option best describes your current role?</label
+        ><br />
+
+        <select id="dropdown">
+          <option value="" selected disabled>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+        </select>
+      </div>
+
+      <!-- Radio buttons-->
+      <div class="form-group">
+        <p id="radio-label">Would you recommend freeCodeCamp to a friend?</p>
+
+        <!-- first choice -->
+        <div class="first-choice">
+          <label for="definitely" class="radio-input"
+            ><input
+              type="radio"
+              name="choice"
+              id="definitely"
+            />Definitely</label
+          ><br />
+        </div>
+
+        <!-- second choice -->
+        <label for="maybe" class="radio-input"
+          ><input type="radio" name="choice" id="maybe" />Maybe</label
+        >
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-group">
+        <input type="checkbox" id="" value="front-end-projects" />
+        <input type="checkbox" id="" value="back-end-projects" />
+        <input type="checkbox" id="" value="data-visualization" />
+        <input type="checkbox" id="" value="challenges" />
+      </div>
+
+      <!-- Text area -->
+      <div class="form-group">
+        <textarea name="" id=""></textarea>
+      </div>
+
+      <!-- Submit button -->
+      <div class="form-group">
+        <button id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
